@@ -11,91 +11,89 @@
 </head>
 
 <body>
-    <header>
-        <img src="image/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="home">Головна</a></li>
-                <li>Про мне
+    <div id="main">
+        <header>
+            <div id="navbar">
+                <img src="image/logo-dumbbell.png" alt="logo">
+                <nav>
                     <ul>
-                        <li><a href="#education">Освіта</a></li>
-                        <li><a href="#sport-achievements">Спортивні досягнення</a></li>
-                        <li><a href="#skill">Досвід</a></li>
+                        <li><a href="#main">Головна</a></li>
+                        <li>Про мне
+                            <ul>
+                                <li><a href="#education">Освіта</a></li>
+                                <li><a href="#sport-achievements">Спортивні досягнення</a></li>
+                                <li><a href="#skill">Досвід</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#portfolio">Портфоліо</a></li>
+                        <li><a href="#contacts">Контакти</a></li>
                     </ul>
-                </li>
-                <li><a href="#portfolio">Портфоліо</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
-        <img src="image/header.jpg" alt="vasil hamulyak">
-        <h1>Тренер дієтолог</h1>
-        <h2>No pain, no gain</h2>
-        <p>Привіт! Я Василь Хамуляк. Працюю тренером і дієтологом у фітнес-центрі "Пляж". 
-            Допомагаю людям долати їхні шкідливі звички в плані харчування і змінювати відображення в дзеркалі. Також готую дівчат і хлопців до змагань з бодібілдінгу, фітнесу
-            та бікіні. Мої вихованці неодноразово ставали чемпіонами та призерами чемпіонатів України та Європи.
-        </p>
-    </header>
-    <section id="education">
-        <h3>Освіта</h3>
-        <img src="image/education-image.jpg" alt="vasil hamulyak education">
-        <p>В 2005 році закінчив Рудківську ЗОШ І - ІІІ ступенів. 
-           З 2005 - 2010 роки навчався у Львівському державному університеті фізичної культури на кафедрі здоров'я людини.
-           Спеціальність - фізична реабілітація.
-        </p>
-    </section>
-    <section id="sport-achievements">
-        <h3>Спортивні досягнення</h3>
-        <img src="image/achievement-image.jpg" alt="vasil hamulyak achievement">
-        <p>Чемпіон України з пауерліфтингу 2008, 2009, 2010 років.
-           Кандидат в майстри спорту з пауерліфтингу.
-           Призер і чемпіон України з бодібілдінгу з 2011 - 2015 роки.
-           Майстер спорту України з бодібілдингу
-        </p>
-    </section>
-    <section id="skills">
-        <h3>Досвід</h3>
-        <img src="image/skill-image.jpg" alt="vasil hamulyak skills">
-        <p>Сім років працюю інструктором фітнес-центру  "ПЛЯЖ".
-           Практикуючий дієтолог і знавець правильного харчування в тому числі при різних захворюваннях.
-           Маю досвід роботи реабілітологом.
-        </p>
-    </section>
-    <section id="portfolio">
-        <h3>Портфоліо</h3>
-        <!--<img src="" alt="portfolio-photo-1">
-        <img src="" alt="portfolio-photo-2">
-        <img src="" alt="portfolio-photo-3">-->
-    </section>
-    <footer>
-        <section id="contact">
-            <div id="my-contact">
-                <h3>Контакти</h3>
-                <form>
-                    <input type="text" name="user-name" placeholder="Ім'я" required>
-                    <br>
-                    <input type="email" name="user-email" placeholder="Електронна адреса" required>
-                    <br>
-                    <input type="text" name="object" placeholder="Тема" required>
-                    <br>
-                    <textarea name="message" placeholder="Залиште своє повідомлення"></textarea>
-                    <input type="submit" value="Відправити">
-                </form>
+                </nav>
             </div>
-            <div>
-                <img src="image/location.png" alt="location">
-                <p>м. Львів вул. Кн. Ольги 114</p>
-                <img src="image/email.png" alt="email address">
-                <p>vasil.hamulyak@gmail.com</p>
-                <img src="image/phone.png" alt="phone number">
-                <p>+380967817191</p>
+            <div id="home">
+                <img src="image/header.png" alt="vasil hamulyak">
+                <h1>Тренер дієтолог</h1>
+                <h2>No pain, no gain</h2>
+            </div>
+            <p>Привіт! Я Василь Хамуляк. Працюю тренером і дієтологом у фітнес-центрі "Пляж". Допомагаю людям долати їхні шкідливі звички в плані харчування і змінювати відображення в дзеркалі. Також готую дівчат і хлопців до змагань з бодібілдінгу, фітнесу
+                та бікіні. Мої вихованці неодноразово ставали чемпіонами та призерами чемпіонатів України та Європи.
+            </p>
+        </header>
+        <br>
+        <section id="education" class="information">
+            <h3>Освіта</h3>
+            <img src="image/education-image.jpg" alt="vasil hamulyak education">
+            <p>В 2005 році закінчив Рудківську ЗОШ І - ІІІ ступенів. З 2005 - 2010 роки навчався у Львівському державному університеті фізичної культури на кафедрі здоров'я людини. Спеціальність - фізична реабілітація.
+            </p>
+        </section>
+        <section id="sport-achievements" class="information">
+            <h3>Спортивні досягнення</h3>
+            <img src="image/achievement-image.jpg" alt="vasil hamulyak achievement">
+            <p>Чемпіон України з пауерліфтингу 2008, 2009, 2010 років. Кандидат в майстри спорту з пауерліфтингу. Призер і чемпіон України з бодібілдінгу з 2011 - 2015 роки. Майстер спорту України з бодібілдингу
+            </p>
+        </section>
+        <section id="skills" class="information">
+            <h3>Досвід</h3>
+            <img src="image/skill-image.jpg" alt="vasil hamulyak skills">
+            <p>Сім років працюю інструктором фітнес-центру "ПЛЯЖ". Практикуючий дієтолог і знавець правильного харчування в тому числі при різних захворюваннях. Маю досвід роботи реабілітологом.
+            </p>
+        </section>
+        <section id="portfolio">
+            <h3>Портфоліо</h3>
+            <div id="portfolio-image">
+                <img src="image/photo-img.png" alt="portfolio-photo-1" height="200" width="300">
+                <img src="image/photo-img.png" alt="portfolio-photo-2" height="200" width="300">
+                <img src="image/photo-img.png" alt="portfolio-photo-3" height="200" width="300">
             </div>
         </section>
-        <hr>
-        &copy;<p><small>Vasil Hamulyak 2017</small></p>
-        <a href="https://www.facebook.com/Vasiaka4ok"><img src="image/facebook.jpg" alt="vasil hamulyak facebook"></a>
-        <img src="image/linkedin.png" alt="vasil hamulyak linkedin">
-        <img src="image/youtube.jpg" alt="vasil hamulyak youtube">
-    </footer>
+        <footer>
+            <section id="contacts">
+                <h3>Контакти</h3>
+                <div id="contact-us">
+                    <form>
+                        <input type="text" name="user-name" class="input" placeholder="Ім'я" required>
+                        <input type="email" name="user-email" class="input" placeholder="Електронна адреса" required>
+                        <input type="text" name="object" class="input" placeholder="Тема" required>
+                        <textarea name="message" id="textarea" placeholder="Залиште своє повідомлення"></textarea>
+                        <input type="submit" id="button" value="Відправити">
+                    </form>
+                </div>
+                <div id="my-contact">
+                    <img src="image/location.png" class="icon-image" alt="location">
+                    <p>м. Львів вул. Кн. Ольги 114</p>
+                    <img src="image/email.png" class="icon-image" alt="email address">
+                    <p>vasil.hamulyak@gmail.com</p>
+                    <img src="image/phone.png" class="icon-image" alt="phone number">
+                    <p>+380967817191</p>
+                </div>
+            </section>
+            <hr> &copy;
+            <p><small>Vasil Hamulyak 2017</small></p>
+            <a href="https://www.facebook.com/Vasiaka4ok"><img src="image/facebook.jpg" alt="vasil hamulyak facebook"></a>
+            <img src="image/linkedin.png" alt="vasil hamulyak linkedin">
+            <img src="image/youtube.jpg" alt="vasil hamulyak youtube">
+        </footer>
+    </div>
 </body>
 
 </html>
