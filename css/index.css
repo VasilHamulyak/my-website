@@ -7,6 +7,11 @@ body {
     margin: 0 auto;
     max-width: 1000px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #000000;
+}
+
+#main {
+    background-color: #FFFFFF;
 }
 
 #navbar {
@@ -16,8 +21,12 @@ body {
     background-color: #333333;
 }
 
-#navbar > img {
+#navbar>img {
     margin-left: 100px;
+}
+
+#burger-menu {
+    display: none;
 }
 
 nav {
@@ -25,22 +34,20 @@ nav {
     grid-row: 1/2;
 }
 
-nav ul {
+nav>ul {
     display: grid;
     grid-auto-flow: column;
-    list-style: none;
     margin: 0;
 }
 
-nav li {
-    color: white;
-    border: 1px solid white;
-    width: 150px;
-    height: 60px;
+nav ul li {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
     text-align: center;
     line-height: 60px;
     box-sizing: border-box;
     background-color: #333333;
+    list-style: none;
 }
 
 nav li:hover {
@@ -49,17 +56,16 @@ nav li:hover {
 
 nav li a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
-nav ul ul {
+nav ul li ul {
     display: none;
+    position: absolute;
 }
 
 nav ul li:hover ul {
     display: block;
-    margin-right: 40px;
-    margin-top: 0;
 }
 
 #home {
@@ -69,10 +75,9 @@ nav ul li:hover ul {
     background-color: #D3D3D3;
 }
 
-#home > img {
+#home>img {
     grid-column: 1/3;
     grid-row: 1/6;
-    justify-self: center;
 }
 
 #home h1 {
@@ -91,7 +96,7 @@ nav ul li:hover ul {
     text-transform: uppercase;
 }
 
-header > p {
+header>p {
     margin: 20px 50px 20px 50px;
     font-size: 20px;
     text-align: center;
@@ -102,23 +107,22 @@ header > p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: minmax(50px, auto);
-    grid-template-areas: "h3 h3 h3 h3 h3"
-                         "img p p p p";
+    grid-template-areas: "h3 h3 h3 h3 h3" "img p p p p";
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.information > h3 {
+.information>h3 {
     grid-area: h3;
     text-align: center;
     text-transform: uppercase;
 }
 
-.information > img {
+.information>img {
     grid-area: img;
 }
 
-.information > p {
+.information>p {
     grid-area: p;
     font-size: 20px;
     text-align: left;
@@ -126,7 +130,7 @@ header > p {
     margin-left: 50px;
 }
 
-#portfolio > h3{
+#portfolio>h3 {
     text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
@@ -135,18 +139,18 @@ header > p {
 
 #portfolio-image {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
     grid-gap: 10px;
-    justify-items: center;
     margin-bottom: 40px;
 }
 
-#portfolio-image > img {
-    border: 1px solid #333333;    
+#portfolio-image>img {
+    border: 1px solid #333333;
 }
 
 footer {
-    background-color: #D3D3D3;   
+    background-color: #D3D3D3;
 }
 
 #contacts {
@@ -156,7 +160,7 @@ footer {
     margin-bottom: 30px;
 }
 
-#contacts > h3 {
+#contacts>h3 {
     grid-column: 1/6;
     grid-row: 1/2;
     text-align: center;
@@ -165,12 +169,12 @@ footer {
     margin-bottom: 40px;
 }
 
-#contacts > #contact-us {
+#contacts>#contact-us {
     grid-column: 1/4;
     grid-row: 2/5;
 }
 
-#contacts > #my-contact {
+#contacts>#my-contact {
     grid-column: 4/6;
     grid-row: 2/5;
 }
@@ -182,34 +186,86 @@ footer {
     margin-left: 20px;
 }
 
-#contacts form > .input {
+#contacts form>.input {
     grid-column: 1/3;
-    width: 260px;
     height: 30px;
+    margin-right: 20px;
     margin-bottom: 10px;
     font-size: 16px;
     background-color: #FFF6E6;
     border: 1px solid #333333;
 }
 
-#contacts form > textarea {
+#contacts form>textarea {
     grid-column: 3/5;
     grid-row: 1/5;
-    width: 260px;
-    height: 120px;
+    margin-right: 20px;
+    height: 115px;
     font-size: 16px;
     background-color: #FFF6E6;
     border: 1px solid #333333;
 }
 
-#contacts form > #button {
-    grid-column: 1/5;
+#contacts form>#button {
+    grid-column: 2/5;
     grid-row: 5/6;
-    justify-self: center;
-    width: 250px;
+    width: 60%;
     height: 40px;
     border: 1px solid #333333;
     font-size: 16px;
     margin-top: 20px;
 }
- 
+
+form>#button:hover {
+    background-color: #FFA500;
+}
+
+#checkup {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#sent {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#my-contact {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: "img p";
+}
+
+#network {
+    display: grid;
+    grid-template-columns: 70px 1fr 60px 60px 100px;
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-areas: "p p a a a";
+    background-color: #333333;
+    height: 60px;
+    align-items: center;
+}
+
+#network>p {
+    color: #FFFFFF;
+}
+
+#copyright {
+    margin-left: 50px;
+}
+
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    border: 5px solid #000000;
+    padding: 5px;
+    right: 40px;
+}
+
+#btn:hover {
+    background-color: #FFA500;
+}

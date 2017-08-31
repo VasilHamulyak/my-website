@@ -1,0 +1,10 @@
+#portfolio-image img:nth-child(3) {
+    display: none;
+}
+
+#portfolio-image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-gap: 10px;
+}
