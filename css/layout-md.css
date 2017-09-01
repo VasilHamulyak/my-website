@@ -4,7 +4,10 @@
 
 #portfolio-image {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10%;
+}
+
+#portfolio-image > button {
+    display: none;
 }

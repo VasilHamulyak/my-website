@@ -142,6 +142,10 @@ header>p {
   display: none;
 }
 
+#portfolio-image > button {
+  display: block;
+}
+
 #contacts {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
