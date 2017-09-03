@@ -8,6 +8,10 @@
     margin-left: 10%;
 }
 
+#portfolio-image>img {
+    width: 80%;
+}
+
 #portfolio-image > button {
     display: none;
 }
