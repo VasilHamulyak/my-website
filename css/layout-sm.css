@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 #navbar {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -66,7 +71,7 @@ nav li:hover {
 }
 
 header>p {
-  margin: 20px 50px 20px 50px;
+  margin: 20px 10px 20px 10px;
   font-size: 16px;
   text-align: center;
   line-height: 1.8;
@@ -125,6 +130,8 @@ header>p {
   text-align: left;
   line-height: 1.8;
   margin-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #portfolio-image {
@@ -135,20 +142,20 @@ header>p {
 
 #portfolio-image>img {
   width: 100%;
-  height: 200px;
+  height: 240px;
 }
 
 #portfolio-image>#previous {
   display: block;
   position: absolute;
-  margin-top: 20%;
+  margin-top: 30%;
 }
 
 
 #portfolio-image>#next {
   display: block;
   position: absolute;
-  margin-top: 20%;
+  margin-top: 30%;
   right: 0;
 }
 
@@ -222,7 +229,7 @@ header>p {
 
 #btn {
   margin-right: 0;
-  bottom: 40px;
+  bottom: 50px;
   border: 5px solid #000000;
   padding: 5px;
 }
